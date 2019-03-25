@@ -1,3 +1,3 @@
-# Eleventy testing
+# Eleventy testing Hugo/ Clément/ Félix/ Benoit/ Arthur
 
 Waiting for patterlab files...
