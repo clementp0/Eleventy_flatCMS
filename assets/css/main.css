@@ -2,18 +2,8 @@ body{
     background-color: aliceblue;
     font-family: 'Roboto', sans-serif;
 }
-body,html{
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-}
 h2{
     margin: 0;
-}
-h1{
-    margin: 0 0 .5em;;
-    padding: .5em 0;
-    border-bottom: 1px solid rgb(215, 237, 255);
 }
 
 .flexTest{
@@ -34,12 +24,10 @@ h1{
     padding: 1em;
     flex: 1;
 }
+.test:hover{
+    background-color: rgb(215, 237, 255);
+}
 .wrapper{
     width: 80%;
     margin: auto;
-}
-footer{
-    width: 100%;
-    background-color: rgb(215, 237, 255);
-    height: 200px;
 }
