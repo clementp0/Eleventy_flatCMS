@@ -8,20 +8,26 @@ h2{
 
 .flexTest{
     display: flex;
-    width: 80%;
     margin: auto;
     flex-direction: row;
-    align-items: center;
+    align-items: flex-start;
     flex-wrap: wrap;
     justify-content: center;
 }
 
 .test{
     background-color: white;
-    margin: 1em 1em;
+    margin: .5em .5em;
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
     min-width: 40%;
     border-radius: .3em;
     padding: 1em;
     flex: 1;
+}
+.test:hover{
+    background-color: rgb(215, 237, 255);
+}
+.wrapper{
+    width: 80%;
+    margin: auto;
 }
