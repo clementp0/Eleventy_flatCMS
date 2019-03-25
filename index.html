@@ -1,0 +1,13 @@
+---
+layout: index.liquid
+title: Welcome to my blog
+---
+<div class="flexTest">
+{% for test in collections.test %}
+<div class="test">
+<h2><a href="{{ test.url }}">{{ test.data.strong }}</a></h2>
+<p>{{ test.data.p }}</p>
+<em>{{ test.date | date: "%Y-%m-%d" }}</em>
+</div>
+{% endfor %}
+</div>
