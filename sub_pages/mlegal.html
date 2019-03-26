@@ -5,7 +5,7 @@ title: Page Mentions Légales
 {% for mlegal in collections.mlegal %}
 <div class="mlegal">
 <h2><a href="{{ mlegal.url }}">{{ mlegal.data.strong }}</a></h2>
-<p>{{ mlegal .data.p }}</p>
-<em>{{ mlegal .date | date: "%Y-%m-%d" }}</em>
+<p>{{ mlegal.data.p }}</p>
+<em>{{ mlegal.date | date: "%Y-%m-%d" }}</em>
 </div>
 {% endfor %}
