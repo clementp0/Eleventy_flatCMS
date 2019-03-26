@@ -1,4 +1,4 @@
 {
-    "layout" : "pages/compte_rendu.liquid",
+    "layout" : "single/cr_single.liquid",
     "tags" : ["compte_rendu"]
 }
