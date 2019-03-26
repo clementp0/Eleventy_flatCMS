@@ -1,4 +1,4 @@
 {
     "layout" : "pages/events.liquid",
-    "tags" : ["compte rendu"]
+    "tags" : ["compte_rendu"]
 }
