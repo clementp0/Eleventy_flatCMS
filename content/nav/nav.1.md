@@ -1,4 +1,4 @@
 ---
-titleMenu: Evenement
-lienMenu: /test
+titleMenu: Evenements
+lienMenu: /sub_pages/events/
 ---

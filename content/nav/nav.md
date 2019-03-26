@@ -1,4 +1,0 @@
----
-titleMenu: Evenement
-lienMenu: /test
----
