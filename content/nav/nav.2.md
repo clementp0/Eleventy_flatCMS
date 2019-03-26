@@ -1,4 +1,0 @@
----
-titleMenu: Ressources
-lienMenu: /test
----
