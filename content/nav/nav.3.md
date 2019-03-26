@@ -1,4 +1,4 @@
 ---
-titleMenu: Contact
-lienMenu: /test
+titleMenu: Ressources
+lienMenu: /sub_pages/ressources
 ---

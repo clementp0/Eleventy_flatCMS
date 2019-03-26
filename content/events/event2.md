@@ -1,4 +1,4 @@
 ---
-    p : Ceci est un prout
+    p : Ceci est un bonjour
     strong : "Encore un test"
 ---
