@@ -1,4 +1,4 @@
 ---
 titleMenu: Ressources
-lienMenu: /test
+lienMenu: /sub_pages/#
 ---
