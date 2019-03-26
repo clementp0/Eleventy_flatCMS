@@ -2,12 +2,3 @@
 layout: index.liquid
 title: Bienvenue sur Eleventy !
 ---
-<div class="flexTest">
-{% for events in collections.events %}
-<div class="events">
-<h2><a href="{{ events.url }}">{{ events.data.strong }}</a></h2>
-<p>{{ events.data.p }}</p>
-<em>{{ events.date | date: "%Y-%m-%d" }}</em>
-</div>
-{% endfor %}
-</div>  

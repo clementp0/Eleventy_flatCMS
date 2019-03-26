@@ -1,4 +1,4 @@
 {
-    "layout" : "pages/events.liquid",
+    "layout" : "single/ev_single.liquid",
     "tags" : ["events"]
 }
