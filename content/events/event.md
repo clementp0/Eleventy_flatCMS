@@ -1,5 +1,5 @@
 ---
     p : Ceci est un meme
-    strong : "Encore un test"
+    strong : "Event"
 ---
 
