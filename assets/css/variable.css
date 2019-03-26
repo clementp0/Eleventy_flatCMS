@@ -5,3 +5,8 @@
     --red-color : #ff2e53;
     --txt-color: #5a5a5a;
 }
+.inner {
+    max-width: 1080px;
+    width: 95%;
+    margin: auto;
+}

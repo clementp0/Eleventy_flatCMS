@@ -1,4 +1,6 @@
 @import url("variable.css");
+@import url("home.css");
+@import url("event.css");
 
 body{
     background-color: aliceblue;

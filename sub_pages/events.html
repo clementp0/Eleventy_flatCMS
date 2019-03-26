@@ -2,10 +2,64 @@
 layout: pages/events.liquid
 title: Page des events
 ---
-{% for events in collections.events %}
-<div class="events">
-<h2><a href="{{ events.url }}">{{ events.data.strong }}</a></h2>
-<p>{{ events.data.p }}</p>
-<em>{{ events.date | date: "%Y-%m-%d" }}</em>
+
+<div class="inner">
+    <div class="event_list">
+        {% for events in collections.events %}
+        <div class="event_item">
+
+            <div class="event_item__view">
+                <img src="https://img.grouponcdn.com/deal/aGHt4Zk9X7bGjGyVayJZAW/swan-boat-700x420/v1/c700x420.jpg"
+                    alt="image de travail" class="img_work">
+            </div>
+
+            <div class="event_item__desc">
+
+                <h3>Conférence Design Systems</h3>
+
+                <div class="rdv">
+
+                    <p>De 18:00 à 20:00</p>
+
+                    <div class="rdv__date">
+                        <span class="rdv__month">NOVEMBRE</span>
+                        <span class="rdv__day">21</span>
+                        <span class="rdv__years">2019</span>
+                    </div>
+
+                </div>
+
+                <p class="event_item__infos">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor.</p>
+
+                <div class="event_item__talker">
+
+                    <div class="talker__title">
+                        <p>INTERVENANTS</p>
+                    </div>
+
+                    <div class="talker__infos">
+
+                        <div class="talker__view">
+                            <img src="https://img.grouponcdn.com/deal/aGHt4Zk9X7bGjGyVayJZAW/swan-boat-700x420/v1/c700x420.jpg"
+                                alt="intervants picturs" width="200px">
+                        </div>
+
+                        <div class="talker__profil">
+                            <p class="talker__name">Jean Michel Patos</p>
+                            <p>Jeanmich.fr</p>
+                            <p>@jeanmich</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        {% endfor %}
+    </div>
+    <!-- <div class="events">
+        <h2><a href="{{ events.url }}">{{ events.data.strong }}</a></h2>
+        <p>{{ events.data.p }}</p>
+        <em>{{ events.date | date: "%Y-%m-%d" }}</em>
+        </div> -->
 </div>
-{% endfor %}

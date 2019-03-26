@@ -18,10 +18,14 @@
             </ul>
         </nav>
     </header>
-    <div class="wrapper">
-        <h1>{{title}}</h1>
+    <section class="hero">
+        <div class="inner">
+            <h1>{{title}}</h1>
+            <h2>{{sub_title}}</h2>  
+            <p>{{hero_text}}</p>
+        </div>
+    </section>
         {{content}}
-    </div>
     <footer>
         {% include pages/footer.liquid for footer %}
         <ul>
