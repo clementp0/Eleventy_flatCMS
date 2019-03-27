@@ -1,4 +1,4 @@
 ---
 titleMenu: Contact
-lienMenu: /sub_pages/contact
+lienMenu: ./sub_pages/contact
 ---
