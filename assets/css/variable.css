@@ -6,6 +6,7 @@
     --btn-color : #D1F0F9;
     --red-color : #ff2e53;
     --txt-color: #5a5a5a;
+    --txt-color-grey : #7e7e7e;
     --title-font : 'Palanquin Dark', sans-serif;
     --text-font : 'Palanquin', sans-serif;
 }
@@ -61,7 +62,7 @@ span.subtitle{
 p.high{
     font-size: 20px;
     margin: 0;
-    color: var(--txt-color);
+    color: var(--txt-color-grey);
 }
 p.low{
     font-size: 16px;
