@@ -8,7 +8,7 @@ title: Page des comptes rendus
             <div class="event_list event_list--old">
                 {% for compte_rendu in collections.compte_rendu %}
                 <div class="event_item">
-                    <a href="{{compte_rendu.data.cr_link}}">
+                    <a href="{{compte_rendu.url}}">
     
                         <div class="event_item__view">
                             <img src="{{compte_rendu.data.cr_img}}" alt="{{compte_rendu.data.cr_alt_img}}" class="img_work">
@@ -29,7 +29,7 @@ title: Page des comptes rendus
                                 </div>
     
                             </div>
-    
+                            <h4>Résumé</h4>
                             <p class="event_item__infos">{{compte_rendu.data.cr_infos}}</p>
     
                             <div class="event_item__talker">
