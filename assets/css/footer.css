@@ -5,6 +5,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+.footer__img{
+  width: 67.5px;
+}
 
 .footer__newsletter__text, .footer__newsletter__title {
   text-align: center;
