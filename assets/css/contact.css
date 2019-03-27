@@ -37,4 +37,5 @@
 }
 .contact__form__right input,textarea{
     width: 100%;
+    resize: none;
 }

@@ -1,4 +1,5 @@
 ---
-titleMenu: Compte Rendu
-lienMenu: ./sub_pages/compte_rendu
+titleMenu: Événements
+lienMenu: /sub_pages/events/
 ---
+
