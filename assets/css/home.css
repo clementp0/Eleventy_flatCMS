@@ -1,8 +1,10 @@
-.hero {
-    background: var(--main-color);
+.event__head{
+    margin: 48px auto;
+    text-align: center;
 }
-.hero .inner {
+.event__content{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
+    margin-bottom: 78px;
 }

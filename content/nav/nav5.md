@@ -1,4 +1,4 @@
 ---
-titleMenu: À Propos
+titleMenu: Contact
 lienMenu: /sub_pages/#
 ---
