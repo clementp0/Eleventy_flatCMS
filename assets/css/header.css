@@ -8,7 +8,7 @@
     align-items: center;
 }
 header{
-    position: fixed;
+    position: absolute;
     top: 32px;
     width: 100%;
     z-index: 100;
