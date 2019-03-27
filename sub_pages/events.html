@@ -7,52 +7,53 @@ title: Page des events
     <div class="event_list">
         {% for events in collections.events %}
         <div class="event_item">
+            <a href="{{events.data.event_link}}">
 
-            <div class="event_item__view">
-                <img src="https://img.grouponcdn.com/deal/aGHt4Zk9X7bGjGyVayJZAW/swan-boat-700x420/v1/c700x420.jpg"
-                    alt="image de travail" class="img_work">
-            </div>
-
-            <div class="event_item__desc">
-
-                <h3>Conférence Design Systems</h3>
-
-                <div class="rdv">
-
-                    <p>De 18:00 à 20:00</p>
-
-                    <div class="rdv__date">
-                        <span class="rdv__month">NOVEMBRE</span>
-                        <span class="rdv__day">21</span>
-                        <span class="rdv__years">2019</span>
-                    </div>
-
+                <div class="event_item__view">
+                    <img src="{{events.data.event_img}}"
+                        alt="{{events.data.event_alt_img}}" class="img_work">
                 </div>
+                
+                <div class="event_item__desc">
 
-                <p class="event_item__infos">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-                    tempor.</p>
+                    <h3>{{events.data.event_title}}</h3>
 
-                <div class="event_item__talker">
+                    <div class="rdv">
 
-                    <div class="talker__title">
-                        <p>INTERVENANTS</p>
-                    </div>
+                        <p>De {{events.data.event_from}} à {{events.data.event_to}}</p>
 
-                    <div class="talker__infos">
-
-                        <div class="talker__view">
-                            <img src="https://img.grouponcdn.com/deal/aGHt4Zk9X7bGjGyVayJZAW/swan-boat-700x420/v1/c700x420.jpg"
-                                alt="intervants picturs" width="200px">
+                        <div class="rdv__date">
+                            <span class="rdv__month">{{events.data.event_month}}</span>
+                            <span class="rdv__day">{{events.data.event_day}}</span>
+                            <span class="rdv__years">{{events.data.event_year}}</span>
                         </div>
 
-                        <div class="talker__profil">
-                            <p class="talker__name">Jean Michel Patos</p>
-                            <p>Jeanmich.fr</p>
-                            <p>@jeanmich</p>
+                    </div>
+
+                    <p class="event_item__infos">{{events.data.event_infos}}</p>
+
+                    <div class="event_item__talker">
+
+                        <div class="talker__title">
+                            <p>Intervenants</p>
+                        </div>
+
+                        <div class="talker__infos">
+
+                            <div class="talker__view">
+                                <img src="{{events.data.talker_img}}"
+                                    alt="{{events.data.talker_img_alt}}">
+                            </div>
+
+                            <div class="talker__profil">
+                                <p class="talker__name">{{events.data.talker_name}}</p>
+                                <p>{{events.data.talker_site}}</p>
+                                <p>{{events.data.talker_mail}}</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
+            </a>
         </div>
 
         {% endfor %}

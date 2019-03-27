@@ -1,6 +1,6 @@
 module.exports = {
   templateFormats: [
-    "md","css","img","jpg","png","gif"
+    "md","css","html","img","jpg","png","gif"
   ],
   passthroughFileCopy: true
 };
