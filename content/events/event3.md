@@ -1,4 +1,23 @@
 ---
-    p : Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l'imprimerie depuis les années 1500, quand un imprimeur anonyme assembla ensemble des morceaux de texte pour réaliser un livre spécimen de polices de texte. Il n'a pas fait que survivre cinq siècles, mais s'est aussi adapté à la bureautique informatique, sans que son contenu n'en soit modifié. Il a été popularisé dans les années 1960 grâce à la vente de feuilles Letraset contenant des passages du Lorem Ipsum, et, plus récemment, par son inclusion dans des applications de mise en page de texte, comme Aldus PageMaker.
-    strong : Encore un test
+    event_link : "#"
+
+    event_img : http://demo.patternlab.io/images/fpo_16x9.png
+    event_alt_img : une oie
+
+    event_title : Titre de test
+
+    event_from : 15h
+    event_to : 18h
+    event_month : decembre
+    event_day : "24"
+    event_year: "2019"
+
+    event_infos : Découvrez le fonctionnement d’un Design Systems, de son installation a sa personna...
+
+    talker_img : http://demo.patternlab.io/images/fpo_16x9.png
+    talker_img_alt : image de l'intervenant
+    talker_name : Pierre Paul
+    talker_site : pierrepaul.fr
+    talker_mail : "@pierrepaul"
+
 ---
