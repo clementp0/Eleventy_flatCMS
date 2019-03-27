@@ -1,3 +1,29 @@
+/* .events_page .event_list {
+    grid-template-columns: repeat(2, 1fr);
+}
+.events_page .event_item__view {
+    height: 200px;
+}
+.events_page .event_item__desc, .event_item__desc h3, .event_item__talker .talker__profil{
+    font-size: 130%;
+
+}
+
+.events_page h3 {
+    font-size: 32px
+}
+.events_page .rdv p{
+    font-size: 20px;
+}
+.events_page h4{
+    font-size: 20px;
+}
+.events_page .talker__title p {
+    font-size: 16px;
+} */
+
+
+
 .event_list {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
