@@ -1,4 +1,7 @@
 ---
-titleMenu: Événements
-lienMenu: /sub_pages/events/
+titleMenu: Ressources
+lienMenu: /sub_pages/ressources
 ---
+
+
+

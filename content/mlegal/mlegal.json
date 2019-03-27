@@ -1,4 +1,4 @@
 {
-    "layout" : "single/mlegal_single.liquid",
+    "layout" : "pages/mlegal.liquid",
     "tags" : ["mlegal"]
 }

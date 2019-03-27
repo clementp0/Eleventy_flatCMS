@@ -1,4 +1,5 @@
 ---
-titleMenu: Ressources
-lienMenu: /sub_pages/ressources
+titleMenu: Compte Rendu
+lienMenu: /sub_pages/compte_rendu
 ---
+
