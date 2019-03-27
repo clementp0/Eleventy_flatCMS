@@ -2,65 +2,59 @@
 layout: pages/events.liquid
 title: Page des events
 ---
+<section class="events">
 
-<div class="inner">
-    <div class="event_list">
-        {% for events in collections.events %}
-        <div class="event_item">
-            <a href="{{events.data.event_link}}">
+    <div class="inner">
+        <div class="event_list">
+            {% for events in collections.events %}
+            <div class="event_item">
+                <a href="{{events.data.event_link}}">
 
-                <div class="event_item__view">
-                    <img src="{{events.data.event_img}}"
-                        alt="{{events.data.event_alt_img}}" class="img_work">
-                </div>
-                
-                <div class="event_item__desc">
-
-                    <h3>{{events.data.event_title}}</h3>
-
-                    <div class="rdv">
-
-                        <p>De {{events.data.event_from}} à {{events.data.event_to}}</p>
-
-                        <div class="rdv__date">
-                            <span class="rdv__month">{{events.data.event_month}}</span>
-                            <span class="rdv__day">{{events.data.event_day}}</span>
-                            <span class="rdv__years">{{events.data.event_year}}</span>
-                        </div>
-
+                    <div class="event_item__view">
+                        <img src="{{events.data.event_img}}" alt="{{events.data.event_alt_img}}" class="img_work">
                     </div>
 
-                    <p class="event_item__infos">{{events.data.event_infos}}</p>
+                    <div class="event_item__desc">
 
-                    <div class="event_item__talker">
+                        <h3>{{events.data.event_title}}</h3>
 
-                        <div class="talker__title">
-                            <p>Intervenants</p>
-                        </div>
+                        <div class="rdv">
 
-                        <div class="talker__infos">
+                            <p>De {{events.data.event_from}} à {{events.data.event_to}}</p>
 
-                            <div class="talker__view">
-                                <img src="{{events.data.talker_img}}"
-                                    alt="{{events.data.talker_img_alt}}">
+                            <div class="rdv__date">
+                                <span class="rdv__month">{{events.data.event_month}}</span>
+                                <span class="rdv__day">{{events.data.event_day}}</span>
+                                <span class="rdv__years">{{events.data.event_year}}</span>
                             </div>
 
-                            <div class="talker__profil">
-                                <p class="talker__name">{{events.data.talker_name}}</p>
-                                <p>{{events.data.talker_site}}</p>
-                                <p>{{events.data.talker_mail}}</p>
+                        </div>
+
+                        <p class="event_item__infos">{{events.data.event_infos}}</p>
+
+                        <div class="event_item__talker">
+
+                            <div class="talker__title">
+                                <p>Intervenants</p>
+                            </div>
+
+                            <div class="talker__infos">
+
+                                <div class="talker__view">
+                                    <img src="{{events.data.talker_img}}" alt="{{events.data.talker_img_alt}}">
+                                </div>
+
+                                <div class="talker__profil">
+                                    <p class="talker__name">{{events.data.talker_name}}</p>
+                                    <p>{{events.data.talker_site}}</p>
+                                    <p>{{events.data.talker_mail}}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                </div>
-            </a>
+                </a>
+            </div>
+            {% endfor %}
         </div>
-
-        {% endfor %}
     </div>
-    <!-- <div class="events">
-        <h2><a href="{{ events.url }}">{{ events.data.strong }}</a></h2>
-        <p>{{ events.data.p }}</p>
-        <em>{{ events.date | date: "%Y-%m-%d" }}</em>
-        </div> -->
-</div>
+</section>

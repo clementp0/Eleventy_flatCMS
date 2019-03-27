@@ -2,10 +2,59 @@
 layout: pages/compte_rendu.liquid
 title: Page des comptes rendus
 ---
-{% for compte_rendu in collections.compte_rendu %}
-<div class="compte_rendu">
-<h2><a href="{{ compte_rendu.url }}">{{ compte_rendu.data.strong }}</a></h2>
-<p>{{ compte_rendu.data.p }}</p>
-<em>{{ compte_rendu.date | date: "%Y-%m-%d" }}</em>
-</div>
-{% endfor %}
+<section class="events events--old">
+
+        <div class="inner">
+            <div class="event_list">
+                {% for compte_rendu in collections.compte_rendu %}
+                <div class="event_item">
+                    <a href="{{compte_rendu.data.event_link}}">
+    
+                        <div class="event_item__view">
+                            <img src="{{compte_rendu.data.event_img}}" alt="{{compte_rendu.data.event_alt_img}}" class="img_work">
+                        </div>
+    
+                        <div class="event_item__desc"> 
+    
+                            <h3>{{compte_rendu.data.event_title}}</h3>
+    
+                            <div class="rdv">
+    
+                                <p>De {{compte_rendu.data.event_from}} à {{compte_rendu.data.event_to}}</p>
+    
+                                <div class="rdv__date">
+                                    <span class="rdv__month">{{compte_rendu.data.event_month}}</span>
+                                    <span class="rdv__day">{{compte_rendu.data.event_day}}</span>
+                                    <span class="rdv__years">{{compte_rendu.data.event_year}}</span>
+                                </div>
+    
+                            </div>
+    
+                            <p class="event_item__infos">{{compte_rendu.data.event_infos}}</p>
+    
+                            <div class="event_item__talker">
+    
+                                <div class="talker__title">
+                                    <p>Intervenants</p>
+                                </div>
+    
+                                <div class="talker__infos">
+    
+                                    <div class="talker__view">
+                                        <img src="{{compte_rendu.data.talker_img}}" alt="{{compte_rendu.data.talker_img_alt}}">
+                                    </div>
+    
+                                    <div class="talker__profil">
+                                        <p class="talker__name">{{compte_rendu.data.talker_name}}</p>
+                                        <p>{{compte_rendu.data.talker_site}}</p>
+                                        <p>{{compte_rendu.data.talker_mail}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
