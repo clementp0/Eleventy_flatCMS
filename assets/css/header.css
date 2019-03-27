@@ -1,6 +1,11 @@
-.header_bloc > img{
+.header_bloc img{
     width: 54px;
-    margin-right: 54px;
+    margin-right: 54px; 
+}
+.header_bloc > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .header_bloc{
     display: flex;
