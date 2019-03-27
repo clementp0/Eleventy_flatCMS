@@ -67,6 +67,11 @@ p.high{
 p.low{
     font-size: 16px;
     margin: 0;
+    color: var(--txt-color-grey);
+}
+strong{
+    font-family: var(--title-font);
+    color: black;
 }
 
 /* BUTTON */
@@ -88,5 +93,5 @@ p.low{
 
 /*SEPARATOR*/
 hr{
-    border: 1px solid rgba(196, 196, 196, 0.3);
+    border: .5px solid rgba(196, 196, 196, 0.3);
 }

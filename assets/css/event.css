@@ -2,7 +2,7 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 26px;
-    padding: 48px 0 0;
+    padding: 0 0 48px 0;
 }
 
 .event_item {

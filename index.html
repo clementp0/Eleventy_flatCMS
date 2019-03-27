@@ -2,7 +2,7 @@
 layout: index.liquid
 title: Design Systems Meet-up
 hero_title: Bordeaux
-description_hero: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod jt.
+description_hero: Le Design Systems meet-up est l’occasion unique de découvrir une façon d’affronter les nouveaux enjeux du design, ainsi que d’échanger avec des experts digitaux autour d’un café.
 ---
 <section class="events">
     <div class="inner">
@@ -12,6 +12,58 @@ description_hero: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d
             <p class="high">Assistez à nos évenements afin d'aborder les différents aspects du Design Systems</p>
         </div>
         <div class="event__content">
+            <div class="event_list">
+                {% for events in collections.events limit:3 %}
+                <div class="event_item">
+                    <a href="{{events.data.event_link}}">
+
+                        <div class="event_item__view">
+                            <img src="{{events.data.event_img}}" alt="{{events.data.event_alt_img}}" class="img_work">
+                        </div>
+
+                        <div class="event_item__desc">
+
+                            <h3>{{events.data.event_title}}</h3>
+
+                            <div class="rdv">
+
+                                <p>De {{events.data.event_from}} à {{events.data.event_to}}</p>
+
+                                <div class="rdv__date">
+                                    <span class="rdv__month">{{events.data.event_month}}</span>
+                                    <span class="rdv__day">{{events.data.event_day}}</span>
+                                    <span class="rdv__years">{{events.data.event_year}}</span>
+                                </div>
+
+                            </div>
+
+                            <p class="event_item__infos">{{events.data.event_infos}}</p>
+
+                            <div class="event_item__talker">
+
+                                <div class="talker__title">
+                                    <p>Intervenants</p>
+                                </div>
+
+                                <div class="talker__infos">
+
+                                    <div class="talker__view">
+                                        <img src="{{events.data.talker_img}}" alt="{{events.data.talker_img_alt}}">
+                                    </div>
+
+                                    <div class="talker__profil">
+                                        <p class="talker__name">{{events.data.talker_name}}</p>
+                                        <p>{{events.data.talker_site}}</p>
+                                        <p>{{events.data.talker_mail}}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+
+                {% endfor %}
+            </div>
             <a href="#" class="btn">Voir tout les Meet-up</a>
         </div>
         <hr>
@@ -31,13 +83,14 @@ description_hero: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed d
     </div>
 </section>
 <section class="create_event">
-        <div class="inner">
-            <div class="event__head">
-                <h2>Envie de créer un événement ?</h2>
-                <p class="high">Vous souhaitez créer un événement autour du Design Systems ? Nous serions ravis d’être l’hôte d’un de vos talks. Entrons en contact !</p>
-            </div>
-            <div class="event__content">
-                <a href="#" class="btn">Contactez nous</a>
-            </div>
+    <div class="inner">
+        <div class="event__head">
+            <h2>Envie de créer un événement ?</h2>
+            <p class="high">Vous souhaitez créer un événement autour du Design Systems ? Nous serions ravis d’être
+                l’hôte d’un de vos talks. Entrons en contact !</p>
         </div>
+        <div class="event__content">
+            <a href="#" class="btn">Contactez nous</a>
+        </div>
+    </div>
 </section>
