@@ -5,32 +5,32 @@ title: Page des comptes rendus
 <section class="events events--old">
 
         <div class="inner">
-            <div class="event_list">
+            <div class="event_list event_list--old">
                 {% for compte_rendu in collections.compte_rendu %}
                 <div class="event_item">
-                    <a href="{{compte_rendu.data.event_link}}">
+                    <a href="{{compte_rendu.data.cr_link}}">
     
                         <div class="event_item__view">
-                            <img src="{{compte_rendu.data.event_img}}" alt="{{compte_rendu.data.event_alt_img}}" class="img_work">
+                            <img src="{{compte_rendu.data.cr_img}}" alt="{{compte_rendu.data.cr_alt_img}}" class="img_work">
                         </div>
     
                         <div class="event_item__desc"> 
     
-                            <h3>{{compte_rendu.data.event_title}}</h3>
+                            <h3>{{compte_rendu.data.cr_title}}</h3>
     
                             <div class="rdv">
     
-                                <p>De {{compte_rendu.data.event_from}} à {{compte_rendu.data.event_to}}</p>
+                                <p>+{{compte_rendu.data.cr_people}} personnes sont venues</p>
     
                                 <div class="rdv__date">
-                                    <span class="rdv__month">{{compte_rendu.data.event_month}}</span>
-                                    <span class="rdv__day">{{compte_rendu.data.event_day}}</span>
-                                    <span class="rdv__years">{{compte_rendu.data.event_year}}</span>
+                                    <span class="rdv__month">{{compte_rendu.data.cr_month}}</span>
+                                    <span class="rdv__day">{{compte_rendu.data.cr_day}}</span>
+                                    <span class="rdv__years">{{compte_rendu.data.cr_year}}</span>
                                 </div>
     
                             </div>
     
-                            <p class="event_item__infos">{{compte_rendu.data.event_infos}}</p>
+                            <p class="event_item__infos">{{compte_rendu.data.cr_infos}}</p>
     
                             <div class="event_item__talker">
     

@@ -58,7 +58,7 @@
   margin-top: 40px!important;
   margin-bottom: 70px;
 }
-.mce_inline_error {
+.mce_inline_error, #mce-error-response, #mce-success-response {
   display: none!important;
 }
 #mc_embed_signup {
@@ -70,4 +70,10 @@
 
 .subfooter {
   background-color: var(--main-color);
+}
+.subfooter > .inner > div > img {
+  width: 54px;
+}
+.subfooter > .inner > p {
+  display: inline-block;
 }

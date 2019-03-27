@@ -7,6 +7,7 @@
     --red-color : #ff2e53;
     --txt-color: #5a5a5a;
     --txt-color-grey : #7e7e7e;
+    --disable-color: #C4C4C4;
     --title-font : 'Palanquin Dark', sans-serif;
     --text-font : 'Palanquin', sans-serif;
 }
@@ -42,12 +43,14 @@ h3{
     font-weight: normal;
     font-size: 20px;
 }
+h4 {
+    margin: 0;
+}
 h4.label{
     color: var(--secondary-color);
     font-size: 14px;
     font-weight: normal;
     text-transform: uppercase;
-    margin: 0;
     letter-spacing: .15em;
 }
 .h2_hero{
