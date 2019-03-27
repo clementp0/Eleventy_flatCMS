@@ -7,6 +7,7 @@
     --red-color : #ff2e53;
     --txt-color: #5a5a5a;
     --txt-color-grey : #7e7e7e;
+    --txt-color-lightgrey : #C4C4C4;
     --title-font : 'Palanquin Dark', sans-serif;
     --text-font : 'Palanquin', sans-serif;
 }
@@ -84,7 +85,7 @@ strong{
     color: var(--secondary-color);
     border-radius: 4px;
     font-size: 20px;
-    transition: ease .3s; 
+    transition: ease .3s;
 }
 .btn:hover {
     background-color: var(--secondary-color);
