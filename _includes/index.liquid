@@ -32,12 +32,14 @@
     </section>
         {{content}}
     <footer>
-        <div class="inner">
-        {% include pages/footer.liquid for footer %}
-        <ul>
-          {% include pages/footer_nav.liquid for footer_nav %}
-        </ul>
-        </div>
+      {% include pages/footer_contenu.liquid for footer_contenu %}
+      <ul>
+        {% include pages/footer_nav.liquid for footer_nav %}
+      </ul>
+      <hr>
+      <ul>
+        {% include pages/footer_rs.liquid for footer_rs %}
+      </ul>
     </footer>
     <script src="/assets/js/main.js"></script>
 </body>
