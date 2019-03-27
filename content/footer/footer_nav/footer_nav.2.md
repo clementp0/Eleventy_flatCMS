@@ -1,4 +1,4 @@
 ---
 titleMenu: Mentions Légales
-lienMenu: ./sub_pages/mlegal
+lienMenu: /sub_pages/mlegal
 ---
