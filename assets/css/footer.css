@@ -71,7 +71,7 @@
 .subfooter {
   background-color: var(--main-color);
 }
-.subfooter > .inner > img {
+.subfooter > .inner > div > img {
   width: 54px;
 }
 .subfooter > .inner > p {
