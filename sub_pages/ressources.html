@@ -1,11 +1,76 @@
 ---
 layout: pages/ressources.liquid
-title: ressources
+title: Ressources
+hero_title: Bordeaux
+description_hero: Retrouvez sur cette page, toutes les ressources utiles ! Vous pourrez suivre toute l’actualité des Design Systems, et de leurs professionnels.
 ---
-{% for ressources in collections.ressources %}
-<div class="ressources">
-<h2><a href="{{ ressources.url }}">{{ ressources.data.strong }}</a></h2>
-<p class="tressources">{{ ressources.data.p }}</p>
-<em>{{ ressources.date | date: "%Y-%m-%d" }}</em>
-</div>
-{% endfor %}
+
+<section class="ressources_header">
+  <div class="inner">
+      <h4 class="label">RESSOURCES</h4>
+      <h2>Design Systems</h2>
+      <p class="high"> Si vous êtes de nature curieuse, nous vous proposons ci-dessous différentes catégories de publications sur les Design Systems. Vous n’avez, maintenant, plus d’excuses !</p>
+  </div>
+</section>
+
+<section class="ressources_filter">
+  {% for ressources_filter in collections.ressources_filter %}
+</section>
+
+<section class="ressources_page">
+
+    <div class="inner">
+
+        <div class="ressource_list">
+            {% for ressources in collections.ressources %}
+            <div class="ressource_item">
+                <a href="{{ressources.data.ressource_link}}">
+
+                    <div class="ressource_item__view">
+                        <img src="{{ressources.data.ressource_img}}" alt="{{ressources.data.ressource_alt_img}}" class="img_work">
+                    </div>
+
+                    <div class="ressource_item__desc">
+
+                        <h3>{{ressources.data.ressource_title}}</h3>
+
+                        <div class="rdv">
+
+                            <p>De {{ressources.data.ressource_from}} à {{ressources.data.ressource_to}}</p>
+
+                            <div class="rdv__date">
+                                <span class="rdv__month">{{ressources.data.ressource_month}}</span>
+                                <span class="rdv__day">{{ressources.data.ressource_day}}</span>
+                                <span class="rdv__years">{{ressources.data.ressource_year}}</span>
+                            </div>
+
+                        </div>
+                        <h4>Synopsis</h4>
+                        <p class="ressource_item__infos">{{ressources.data.ressource_infos}}</p>
+
+                        <div class="ressource_item__talker">
+
+                            <div class="talker__title">
+                                <p>Intervenants</p>
+                            </div>
+
+                            <div class="talker__infos">
+
+                                <div class="talker__view">
+                                    <img src="{{ressources.data.talker_img}}" alt="{{ressources.data.talker_img_alt}}">
+                                </div>
+
+                                <div class="talker__profil">
+                                    <p class="talker__name">{{ressources.data.talker_name}}</p>
+                                    <p>{{ressources.data.talker_site}}</p>
+                                    <p>{{ressources.data.talker_mail}}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>
