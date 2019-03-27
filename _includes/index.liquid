@@ -40,11 +40,13 @@
       </div>
       <div class="subfooter">
         <div class="inner">
-          <a href="#"><img class="footer__img" src="/assets/img/logo_design_systems.svg" alt=""></a>
-          {% include pages/footer_text.liquid for footer_text %}
-          <ul>
-            {% include pages/footer_nav.liquid for footer_nav %}
-          </ul>
+          <div>
+            <img src="/assets/img/logo_design_systems.svg" alt="">
+            {% include pages/footer_text.liquid for footer_text %}
+            <ul>
+              {% include pages/footer_nav.liquid for footer_nav %}
+            </ul>
+          </div>
           <hr>
           <ul>
             {% include pages/footer_rs.liquid for footer_rs %}
