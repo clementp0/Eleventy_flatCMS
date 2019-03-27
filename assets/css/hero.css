@@ -10,4 +10,5 @@
 }
 .hero__content > p{
     color: var(--white-color);
+    font-size: 20px;
 }
