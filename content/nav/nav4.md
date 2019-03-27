@@ -1,4 +1,4 @@
 ---
 titleMenu: À Propos
-lienMenu: /sub_pages/about
+lienMenu: ./sub_pages/about
 ---
