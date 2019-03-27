@@ -32,14 +32,25 @@
     </section>
         {{content}}
     <footer>
-      {% include pages/footer_contenu.liquid for footer_contenu %}
-      <ul>
-        {% include pages/footer_nav.liquid for footer_nav %}
-      </ul>
-      <hr>
-      <ul>
-        {% include pages/footer_rs.liquid for footer_rs %}
-      </ul>
+      <div class="footer__newsletter">
+        <div class="inner">
+          {% include pages/footer_mail.liquid for footer_mail %}
+        </div>
+
+      </div>
+      <div class="subfooter">
+        <div class="inner">
+          <a href="#"><img src="/assets/img/logo_design_systems.svg" alt=""></a>
+          {% include pages/footer_text.liquid for footer_text %}
+          <ul>
+            {% include pages/footer_nav.liquid for footer_nav %}
+          </ul>
+          <hr>
+          <ul>
+            {% include pages/footer_rs.liquid for footer_rs %}
+          </ul>
+        </div>
+      </div>
     </footer>
     <script src="/assets/js/main.js"></script>
 </body>
