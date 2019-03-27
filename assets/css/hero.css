@@ -3,6 +3,7 @@
     background-color: var(--main-color);
     padding-top: 166px;
     padding-bottom: 105px;
+    margin-bottom: 48px ;
 }
 .hero__content{
     max-width: 710px;

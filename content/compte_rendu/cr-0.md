@@ -8,6 +8,7 @@
 
     cr_from : 15h
     cr_to : 18h
+    cr_people: "32"
     cr_month : decembre
     cr_day : "24"
     cr_year: "2019"
