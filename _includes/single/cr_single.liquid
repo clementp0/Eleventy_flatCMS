@@ -1,5 +1,46 @@
 ---
 layout: index.liquid
 ---
-<p>{{p}}</p>
-{{strong}}
+<section class="single_cr">
+    <div class="inner">
+        <div class="single_cr__view">
+            <img src="{{cr_img}}" alt="{{cr_alt_img}}"/>
+        </div>
+        <div class="single_cr__content">
+            <div class="rdv__date">
+                <span class="rdv__month">{{cr_month}}</span>
+                <span class="rdv__day">{{cr_day}}</span>
+                <span class="rdv__years">{{cr_year}}</span>
+            </div>
+            <h1>{{cr_title}}</h1>
+            <div class="single_cr__infos">
+                <span>{{cr_day}} {{cr_month}} {{cr_year}} de {{cr_from}} à {{cr_to}}</span>
+                <span>+ {{cr_people}} personnes sont venues</span>
+            </div>
+            <div class="single_cr__talker --separator">
+                <h4>Intervenants<h4>
+
+                <div class="talker__infos">
+                    <div class="talker__view">
+                        <img src="{{talker_img}}" alt="{{talker_img_alt}}">
+                    </div>
+
+                    <div class="talker__profil">
+                        <p class="talker__name">{{talker_name}}</p>
+                        <p>{{talker_site}}</p>
+                        <p>{{talker_mail}}</p> 
+                    </div>
+                </div>
+            </div>
+            <div class="single_cr__resume">
+                <div class="resume__map">
+                    <ul>
+                    </ul>
+                </div>
+                <div class="resume__content">
+                    {{content}}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
