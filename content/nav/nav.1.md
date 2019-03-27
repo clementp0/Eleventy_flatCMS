@@ -1,4 +1,4 @@
 ---
 titleMenu: Événements
-lienMenu: /sub_pages/events/
+lienMenu: ./sub_pages/events/
 ---
