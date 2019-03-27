@@ -4,7 +4,9 @@
     event_img : http://demo.patternlab.io/images/fpo_16x9.png
     event_alt_img : une oie
 
-    event_title : Titre de test zer
+
+    event_title : Titre de test un
+
 
     event_from : 15h
     event_to : 18h
